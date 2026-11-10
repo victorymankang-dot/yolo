@@ -1,0 +1,265 @@
+{
+  "created": "2026-11-10T16:02:18+09:00",
+  "inputs": {
+    "folder_bus": {
+      "source": "C:\\Users\\quant\\OneDrive\\문서\\claud\\aifell-work-submission\\11.10\\bus.jpg",
+      "copy": "folder_bus/input/bus.jpg",
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+      "width": 810,
+      "height": 1080
+    },
+    "sample_bus": {
+      "source": "C:\\Users\\quant\\venvs\\yolo\\Lib\\site-packages\\ultralytics\\assets\\bus.jpg",
+      "copy": "sample_bus/input/bus.jpg",
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+      "width": 810,
+      "height": 1080
+    },
+    "nk_compare": {
+      "source": "C:\\Users\\quant\\OneDrive\\문서\\claud\\aifell-work-submission\\11.10\\비교NK.png",
+      "copy": "nk_compare/input/비교NK.png",
+      "sha256": "a06dd32a3572ee9dae870c997759040a0399e8a1d51d0a1d17a541c29c2ad8a6",
+      "width": 1248,
+      "height": 699
+    }
+  },
+  "input_comparison_vs_folder_bus": {
+    "folder_bus": {
+      "same_file_as_folder_bus": true,
+      "same_detections_as_folder_bus": true
+    },
+    "sample_bus": {
+      "same_file_as_folder_bus": true,
+      "same_detections_as_folder_bus": true
+    },
+    "nk_compare": {
+      "same_file_as_folder_bus": false,
+      "same_detections_as_folder_bus": false
+    }
+  },
+  "settings": {
+    "imgsz": 640,
+    "device": "cpu",
+    "confs": [
+      0.25,
+      0.5
+    ],
+    "models": [
+      "yolo26n.pt",
+      "yolo26n-seg.pt"
+    ]
+  },
+  "models": {
+    "yolo26n.pt": {
+      "file": "C:\\Users\\quant\\OneDrive\\문서\\claud\\aifell-work-submission\\11.10\\yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+    },
+    "yolo26n-seg.pt": {
+      "file": "C:\\Users\\quant\\OneDrive\\문서\\claud\\aifell-work-submission\\11.10\\yolo26n-seg.pt",
+      "sha256": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+    }
+  },
+  "packages": {
+    "python": "3.15.1",
+    "ultralytics": "8.4.208",
+    "torch": "2.15.0+cpu",
+    "opencv-python": "5.0.0",
+    "numpy": "2.5.4"
+  },
+  "execution": {
+    "script": "C:\\Users\\quant\\OneDrive\\문서\\claud\\aifell-work-submission\\11.10\\outputs\\yolo\\run_yolo.py",
+    "cwd": "C:\\Users\\quant\\OneDrive\\문서\\claud\\aifell-work-submission\\11.10",
+    "python_executable": "C:\\Users\\quant\\venvs\\yolo\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "cuda_available": false
+  },
+  "runs": {
+    "folder_bus": [
+      {
+        "model": "yolo26n.pt",
+        "conf": 0.25,
+        "n_boxes": 5,
+        "n_masks": 0,
+        "min_score": 0.6562,
+        "image": "folder_bus/images/yolo26n_conf0.25.jpg",
+        "json": "folder_bus/json/yolo26n_conf0.25.json",
+        "masks_dir": null,
+        "speed_ms": {
+          "preprocess": 5.5,
+          "inference": 161.0,
+          "postprocess": 2.6
+        }
+      },
+      {
+        "model": "yolo26n.pt",
+        "conf": 0.5,
+        "n_boxes": 5,
+        "n_masks": 0,
+        "min_score": 0.6562,
+        "image": "folder_bus/images/yolo26n_conf0.50.jpg",
+        "json": "folder_bus/json/yolo26n_conf0.50.json",
+        "masks_dir": null,
+        "speed_ms": {
+          "preprocess": 6.4,
+          "inference": 112.5,
+          "postprocess": 2.6
+        }
+      },
+      {
+        "model": "yolo26n-seg.pt",
+        "conf": 0.25,
+        "n_boxes": 5,
+        "n_masks": 5,
+        "min_score": 0.6484,
+        "image": "folder_bus/images/yolo26n-seg_conf0.25.jpg",
+        "json": "folder_bus/json/yolo26n-seg_conf0.25.json",
+        "masks_dir": "folder_bus/masks/yolo26n-seg_conf0.25",
+        "speed_ms": {
+          "preprocess": 4.3,
+          "inference": 175.1,
+          "postprocess": 26.1
+        }
+      },
+      {
+        "model": "yolo26n-seg.pt",
+        "conf": 0.5,
+        "n_boxes": 5,
+        "n_masks": 5,
+        "min_score": 0.6484,
+        "image": "folder_bus/images/yolo26n-seg_conf0.50.jpg",
+        "json": "folder_bus/json/yolo26n-seg_conf0.50.json",
+        "masks_dir": "folder_bus/masks/yolo26n-seg_conf0.50",
+        "speed_ms": {
+          "preprocess": 7.3,
+          "inference": 170.7,
+          "postprocess": 18.4
+        }
+      }
+    ],
+    "sample_bus": [
+      {
+        "model": "yolo26n.pt",
+        "conf": 0.25,
+        "n_boxes": 5,
+        "n_masks": 0,
+        "min_score": 0.6562,
+        "image": "sample_bus/images/yolo26n_conf0.25.jpg",
+        "json": "sample_bus/json/yolo26n_conf0.25.json",
+        "masks_dir": null,
+        "speed_ms": {
+          "preprocess": 4.5,
+          "inference": 124.5,
+          "postprocess": 2.5
+        }
+      },
+      {
+        "model": "yolo26n.pt",
+        "conf": 0.5,
+        "n_boxes": 5,
+        "n_masks": 0,
+        "min_score": 0.6562,
+        "image": "sample_bus/images/yolo26n_conf0.50.jpg",
+        "json": "sample_bus/json/yolo26n_conf0.50.json",
+        "masks_dir": null,
+        "speed_ms": {
+          "preprocess": 4.7,
+          "inference": 118.0,
+          "postprocess": 2.0
+        }
+      },
+      {
+        "model": "yolo26n-seg.pt",
+        "conf": 0.25,
+        "n_boxes": 5,
+        "n_masks": 5,
+        "min_score": 0.6484,
+        "image": "sample_bus/images/yolo26n-seg_conf0.25.jpg",
+        "json": "sample_bus/json/yolo26n-seg_conf0.25.json",
+        "masks_dir": "sample_bus/masks/yolo26n-seg_conf0.25",
+        "speed_ms": {
+          "preprocess": 5.1,
+          "inference": 170.2,
+          "postprocess": 15.8
+        }
+      },
+      {
+        "model": "yolo26n-seg.pt",
+        "conf": 0.5,
+        "n_boxes": 5,
+        "n_masks": 5,
+        "min_score": 0.6484,
+        "image": "sample_bus/images/yolo26n-seg_conf0.50.jpg",
+        "json": "sample_bus/json/yolo26n-seg_conf0.50.json",
+        "masks_dir": "sample_bus/masks/yolo26n-seg_conf0.50",
+        "speed_ms": {
+          "preprocess": 5.0,
+          "inference": 183.3,
+          "postprocess": 15.5
+        }
+      }
+    ],
+    "nk_compare": [
+      {
+        "model": "yolo26n.pt",
+        "conf": 0.25,
+        "n_boxes": 7,
+        "n_masks": 0,
+        "min_score": 0.4185,
+        "image": "nk_compare/images/yolo26n_conf0.25.jpg",
+        "json": "nk_compare/json/yolo26n_conf0.25.json",
+        "masks_dir": null,
+        "speed_ms": {
+          "preprocess": 3.2,
+          "inference": 176.5,
+          "postprocess": 1.9
+        }
+      },
+      {
+        "model": "yolo26n.pt",
+        "conf": 0.5,
+        "n_boxes": 6,
+        "n_masks": 0,
+        "min_score": 0.6572,
+        "image": "nk_compare/images/yolo26n_conf0.50.jpg",
+        "json": "nk_compare/json/yolo26n_conf0.50.json",
+        "masks_dir": null,
+        "speed_ms": {
+          "preprocess": 4.5,
+          "inference": 92.4,
+          "postprocess": 2.1
+        }
+      },
+      {
+        "model": "yolo26n-seg.pt",
+        "conf": 0.25,
+        "n_boxes": 7,
+        "n_masks": 7,
+        "min_score": 0.3014,
+        "image": "nk_compare/images/yolo26n-seg_conf0.25.jpg",
+        "json": "nk_compare/json/yolo26n-seg_conf0.25.json",
+        "masks_dir": "nk_compare/masks/yolo26n-seg_conf0.25",
+        "speed_ms": {
+          "preprocess": 4.2,
+          "inference": 173.2,
+          "postprocess": 15.9
+        }
+      },
+      {
+        "model": "yolo26n-seg.pt",
+        "conf": 0.5,
+        "n_boxes": 5,
+        "n_masks": 5,
+        "min_score": 0.6373,
+        "image": "nk_compare/images/yolo26n-seg_conf0.50.jpg",
+        "json": "nk_compare/json/yolo26n-seg_conf0.50.json",
+        "masks_dir": "nk_compare/masks/yolo26n-seg_conf0.50",
+        "speed_ms": {
+          "preprocess": 6.0,
+          "inference": 138.2,
+          "postprocess": 12.4
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "model": "yolo26n-seg.pt",
+  "conf": 0.25,
+  "imgsz": 640,
+  "image": "bus.jpg",
+  "n": 5,
+  "detections": [
+    {
+      "id": 0,
+      "class_id": 0,
+      "class_name": "person",
+      "score": 0.877,
+      "xyxy": [
+        52.8,
+        396.7,
+        243.4,
+        905.9
+      ]
+    },
+    {
+      "id": 1,
+      "class_id": 0,
+      "class_name": "person",
+      "score": 0.8632,
+      "xyxy": [
+        669.2,
+        396.2,
+        809.9,
+        880.3
+      ]
+    },
+    {
+      "id": 2,
+      "class_id": 5,
+      "class_name": "bus",
+      "score": 0.8555,
+      "xyxy": [
+        4.8,
+        228.5,
+        806.6,
+        740.2
+      ]
+    },
+    {
+      "id": 3,
+      "class_id": 0,
+      "class_name": "person",
+      "score": 0.8106,
+      "xyxy": [
+        221.1,
+        405.4,
+        344.5,
+        859.4
+      ]
+    },
+    {
+      "id": 4,
+      "class_id": 0,
+      "class_name": "person",
+      "score": 0.6484,
+      "xyxy": [
+        0.5,
+        550.4,
+        74.1,
+        872.2
+      ]
+    }
+  ]
+}

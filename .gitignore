@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+captures/
+_prev_run1/
+outputs/yolo/_prev_run1/
+yolo11n.pt
+과제 2026-11-10.png
+
+# 저작권 이슈: 방송 화면 캡처(비교NK)와 그 파생 이미지는 저장소에서 제외
+비교NK.png
+outputs/yolo/nk_compare/input/
+outputs/yolo/nk_compare/images/
+outputs/yolo/nk_compare/masks/
+outputs/yolo/nk_compare/comparison.jpg
+outputs/yolo/comparison_inputs_conf*.jpg

@@ -1,0 +1,69 @@
+{
+  "model": "yolo26n-seg.pt",
+  "conf": 0.5,
+  "imgsz": 640,
+  "image": "비교NK.png",
+  "n": 5,
+  "detections": [
+    {
+      "id": 0,
+      "class_id": 8,
+      "class_name": "boat",
+      "score": 0.8389,
+      "xyxy": [
+        0.6,
+        234.3,
+        311.9,
+        468.2
+      ]
+    },
+    {
+      "id": 1,
+      "class_id": 0,
+      "class_name": "person",
+      "score": 0.8189,
+      "xyxy": [
+        225.3,
+        94.2,
+        285.3,
+        233.9
+      ]
+    },
+    {
+      "id": 2,
+      "class_id": 0,
+      "class_name": "person",
+      "score": 0.7194,
+      "xyxy": [
+        69.5,
+        567.8,
+        122.8,
+        699.0
+      ]
+    },
+    {
+      "id": 3,
+      "class_id": 8,
+      "class_name": "boat",
+      "score": 0.6963,
+      "xyxy": [
+        481.6,
+        543.4,
+        1157.7,
+        695.6
+      ]
+    },
+    {
+      "id": 4,
+      "class_id": 0,
+      "class_name": "person",
+      "score": 0.6373,
+      "xyxy": [
+        12.1,
+        565.2,
+        70.6,
+        699.0
+      ]
+    }
+  ]
+}
